@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.tableController">
+   <children>
+      <AnchorPane prefHeight="850.0" prefWidth="500.0" style="-fx-background-color: #FFE4C4;">
+         <children>
+            <TableView fx:id="Stable" layoutY="53.0" prefHeight="800.0" prefWidth="500.0">
+              <columns>
+                <TableColumn fx:id="Sid" prefWidth="50.0" text="ID" />
+                <TableColumn fx:id="Sname" prefWidth="150.0" text="Name" />
+                <TableColumn fx:id="Sqt" prefWidth="150.0" text="Quantity" />
+                <TableColumn fx:id="Sdate" prefWidth="150.0" text="Expiration Date" />
+              </columns>
+            </TableView>
+            <Label layoutX="150.0" prefHeight="53.0" prefWidth="201.0" text="Сандвичи">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="850.0" prefWidth="500.0" style="-fx-background-color: #DEB887;">
+         <children>
+            <TableView fx:id="Dtable" layoutY="53.0" prefHeight="800.0" prefWidth="500.0">
+              <columns>
+                <TableColumn fx:id="Did" prefWidth="50.0" text="ID" />
+                <TableColumn fx:id="Dname" prefWidth="150.0" text="Name" />
+                <TableColumn fx:id="Dqt" prefWidth="150.0" text="Quantity" />
+                <TableColumn fx:id="Ddate" prefWidth="150.0" text="Expiration Date" />
+              </columns>
+            </TableView>
+            <Label layoutX="163.0" prefHeight="43.0" prefWidth="174.0" text="Десерти">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="36.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane prefHeight="850.0" prefWidth="500.0" style="-fx-background-color: #CD853F;">
+         <children>
+            <TableView fx:id="Ctable" layoutY="53.0" prefHeight="800.0" prefWidth="500.0">
+              <columns>
+                <TableColumn fx:id="Cid" prefWidth="100.0" text="ID" />
+                <TableColumn fx:id="Cname" prefWidth="200.0" text="Name" />
+                <TableColumn fx:id="Cqt" prefWidth="200.0" text="Quantity" />
+              </columns>
+            </TableView>
+            <Label layoutX="150.0" prefHeight="51.0" prefWidth="201.0" text="Кафе чаши">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="36.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</HBox>
